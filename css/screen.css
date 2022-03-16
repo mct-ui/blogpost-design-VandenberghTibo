@@ -64,6 +64,17 @@
   padding: 0 24px;
 }
 
+.c-article__date {
+  padding: 0 24px;
+  font-size: 14px;
+}
+
+.c-quote {
+  font-size: 24px;
+  color: #00b37d;
+  background-color: #f2faf8;
+  padding: 16px;
+}
 /*
     Elements: Page
     ---
@@ -155,9 +166,16 @@ h3 {
 h4,
 h5,
 h6 {
-  font-size: 16px;
+  font-size: 36px;
   line-height: 24px;
   margin: 0 0 24px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 p,
