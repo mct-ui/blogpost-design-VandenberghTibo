@@ -1,3 +1,27 @@
+/* 
+    font face declaretions
+*/
+@font-face {
+  font-family: "Inter Web";
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Web";
+  font-weight: 700;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+
+/*
+    components: Author
+*/
+
+.c-author {
+  display: flex;
+  align-items: center;
+}
+
 /*
     Elements: Page
     ---
@@ -7,9 +31,11 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+  font-family: "droid-serif", Georgia, serif;
   color: #5c6366;
   padding: 48px 24px 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
 }
 
 body {
@@ -46,14 +72,21 @@ img {
     ---
     Default markup for typographic elements
 */
+
+* + h2 {
+  margin-top: 48px;
+}
+
 h1,
 h2,
 h3 {
   color: #17181a;
+  font-family: "Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif;
 }
 
 h1 {
   font-size: 36px;
+  font-family: "playfair display", serif;
   line-height: 40px;
   margin: 0 0 24px;
 }
@@ -103,7 +136,7 @@ blockquote {
   font-size: 23px;
   line-height: 32px;
   margin: 0 0 24px;
-  font-family: 'Times New Roman', serif;
+  font-family: "Times New Roman", serif;
 }
 
 blockquote * {
@@ -190,18 +223,18 @@ a:focus {
     text-decoration: underline;
   }
   a[href]:after {
-    content: ' (' attr(href) ')';
+    content: " (" attr(href) ")";
   }
   abbr[title]:after {
-    content: ' (' attr(title) ')';
+    content: " (" attr(title) ")";
   }
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^='#']:after,
-  a[href^='javascript:']:after {
-    content: '';
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
   }
   pre {
     white-space: pre-wrap !important;
