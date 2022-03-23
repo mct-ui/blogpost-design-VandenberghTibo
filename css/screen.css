@@ -14,68 +14,6 @@
 }
 
 /*
-    components: Author
-*/
-
-.c-author {
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
-  gap: 16px;
-}
-
-.c-author__image {
-  width: 56px;
-  height: 56px;
-  border-radius: 100%;
-}
-
-.c-author__name,
-.c-author__meta {
-  margin-bottom: 0;
-}
-
-.c-author__meta {
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  line-height: 24px;
-}
-
-.c-author__name {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/*
-    components: Article
-*/
-
-.c-article__header,
-.c-article__body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.c-article__header {
-  padding: 24px 24px 0;
-}
-
-.c-article__body {
-  padding: 0 24px;
-}
-
-.c-article__date {
-  padding: 0 24px;
-  font-size: 14px;
-}
-
-.c-quote {
-  font-size: 24px;
-  color: #00b37d;
-  background-color: #f2faf8;
-  padding: 16px;
-}
-/*
     Elements: Page
     ---
     Default markup for page level elements
@@ -238,6 +176,69 @@ a:active {
 a:hover,
 a:focus {
   color: #1abaff;
+}
+
+/*
+    components: Author
+*/
+
+.c-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.c-author__image {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.c-author__name,
+.c-author__meta {
+  margin-bottom: 0;
+}
+
+.c-author__meta {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+}
+
+.c-author__name {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*
+    components: Article
+*/
+
+.c-article__header,
+.c-article__body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-article__header {
+  padding: 24px 24px 0;
+}
+
+.c-article__body {
+  padding: 0 24px;
+}
+
+.c-article__date {
+  padding: 0 24px;
+  font-size: 14px;
+}
+/* component quote */
+.c-quote {
+  font-size: 24px;
+  color: #00b37d;
+  background-color: #f2faf8;
+  padding: 16px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
